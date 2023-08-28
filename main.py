@@ -71,12 +71,6 @@ async def api_geo(id: str = "000000000"):
         else:
             return response
 
-
-@app.get("/api/geo/", response_class=PrettyJSONResponse)
-async def api_geo_single(id: str = ""):
-
-
-
 @app.get("/api/admin/{command}", response_class=PrettyJSONResponse)
 async def api_admin(command: str = "", key: str = "", value: str = "", id: str = "", admin_code: str = ""):
     if admin_code == settings.api_admin:
