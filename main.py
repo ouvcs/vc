@@ -79,4 +79,4 @@ async def api_admin(command: str = "", key: str = "", value: str = "", id: str =
         raise HTTPException(status_code=403, detail="Invalid admin code.")
 
 if __name__ == "__main__":
-    os.system("uvicorn main:app --reload")
+    os.system("uvicorn main:app --reload --host 0.0.0.0 --port 5000")
