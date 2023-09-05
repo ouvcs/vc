@@ -5,7 +5,19 @@ from api_utils import *
 from api_utils import settings as settings
 import ui
 
-app = FastAPI(debug=True, docs_url="/ds", redoc_url="")
+app = FastAPI(debug=True, docs_url="/ds", redoc_url="",             
+    title="OUVC API",
+    version="0.1",
+    contact={
+        "name": "Matvey Buldakov",
+        "url": "https://vk.com/write541161804",
+        "email": "m.buldakvo10min@gmail.com",
+    },
+    license_info={
+        "name": "MIT License",
+        "identifier": "MIT",
+    }
+)
 
 app.mount("/static", StaticFiles(directory="html/static"), name="static")
 
