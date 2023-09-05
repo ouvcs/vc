@@ -40,4 +40,4 @@ async def exception(request: Request, e: HTTPException):
     return PrettyJSONResponse(status_code=e.status_code, content={"error_code": e.status_code, "error": e.detail})
 
 if __name__ == "__main__":
-    os.system("uvicorn main:app --reload --host 0.0.0.0 --port 5000")
+    os.system("uvicorn main:app --host 0.0.0.0 --port 5000")

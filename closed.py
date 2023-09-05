@@ -4,7 +4,7 @@ async def check_token(token: str = ""):
     if token != settings.api_key:
         raise HTTPException(status_code=403, detail="Неверный токен.")
 
-router = APIRouter(prefix="/sapi", tags=["sapi"], dependencies=[Depends(check_token)])
+router = APIRouter(prefix="/sapi", tags=["sapi"], dependencies=[Depends(check_token)], include_in_schema=False)
 
 @router.get("/country/", response_class=PrettyJSONResponse)
 async def sapi_country(id: str = "", cid: str = "", flag: str = "", name: str = "", group: str = "", goverment_type: str = "", goverment_form: str = "", ideology: str = "", political_type: str = "", desc: str = "", dates: str = "", hash: str = ""):
