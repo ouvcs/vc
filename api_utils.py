@@ -15,6 +15,6 @@ async def utils_account(id: str):
 
 @router.get("/checklink/", response_class=PrettyJSONResponse)
 async def utils_checklink(link: str):
-    response = str(requests.get(request.args.get("link")).status_code)
+    response = str(requests.get(link.replace("$", "&")).status_code)
 
     return {"response": response}

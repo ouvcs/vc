@@ -27,6 +27,7 @@ app.include_router(api_utils.router)
 app.include_router(ui.router)
 
 @app.get("/", response_class=PrettyJSONResponse, tags=["default"])
+@app.head("/", response_class=PrettyJSONResponse, tags=["default"])
 async def index():
     return {"response": "Эта страница не подходит для запросов."}
 
