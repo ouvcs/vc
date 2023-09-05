@@ -1,0 +1,37 @@
+{
+    "account": {
+        "moderation": false,
+        "banned": false,
+        "admin": false,
+        "id": "764036910",
+        "cid": "russanija",
+        "vid": "unknown"
+    },
+    "country": {
+        "id": "764036910",
+        "cid": "russanija",
+        "flag": "20230820_220817.png",
+        "name": "Руссанская Республика",
+        "group": "https://vk.com/russania",
+        "goverment_type": "Президентская республика",
+        "goverment_form": "Унитарная",
+        "ideology": "Либерализм",
+        "political_type": "Демократический",
+        "desc": "",
+        "date": "11.05.2022",
+        "add": "",
+        "check": "full"
+    },
+    "valute": {
+        "id": "764036910",
+        "vid": "unknown",
+        "name": "Неизвестно",
+        "photo": "/static/images/country/profile.png",
+        "desc": "",
+        "change": 1.0,
+        "abbreviation": "UNK",
+        "symbol": "",
+        "add": "",
+        "check": "query"
+    }
+}

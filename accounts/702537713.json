@@ -1,0 +1,37 @@
+{
+    "account": {
+        "moderation": false,
+        "banned": false,
+        "admin": false,
+        "id": "702537713",
+        "cid": "republicalaska",
+        "vid": "alsrub"
+    },
+    "country": {
+        "id": "702537713",
+        "cid": "republicalaska",
+        "flag": "https://sun9-16.userapi.com/impg/eRdRgXsEUiUUB3Bow9A3SS33DADegC-pYRf1jA/wtzkksG9JRY.jpg?size=1280x853&quality=95&sign=4a020a02ddaf0e0c1609776b8aff8a95&type=album",
+        "name": "Республика Аляска",
+        "group": "",
+        "goverment_type": "Смешанная республика",
+        "goverment_form": "Федеративная",
+        "ideology": "Неолиберализм",
+        "political_type": "Демократический",
+        "desc": "<p>Виртуальное государство находящиеся в Аляске и Дальнем Востоке! Столицей является Оранжево-Град! В Аляске огромные залежи золота! У нас сильная армия! Большие территории! РА является постоянным членом Совета Безопасности ООВГ!</p>",
+        "date": "2021-08-31",
+        "add": "",
+        "check": "full"
+    },
+    "valute": {
+        "id": "702537713",
+        "vid": "alsrub",
+        "name": "Аляскинский Рубль",
+        "photo": "https://vk.com/photo702537713_457240909",
+        "desc": "<p>Валюта Республики Аляски</p>",
+        "symbol": "",
+        "abbreviation": "ALR",
+        "change": 54.0,
+        "add": "",
+        "check": "full"
+    }
+}

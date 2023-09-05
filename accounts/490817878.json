@@ -1,0 +1,37 @@
+{
+    "account": {
+        "moderation": false,
+        "banned": false,
+        "admin": false,
+        "id": "490817878",
+        "cid": "akr",
+        "vid": "ank"
+    },
+    "country": {
+        "id": "490817878",
+        "cid": "akr",
+        "flag": "https://sun9-66.userapi.com/impg/6H58Kysq_RUIakI3jvwX6gR23r_ZawHCGWZq_A/SgeuY0J_hxQ.jpg?size=798x556&quality=95&sign=93c5e89bf49a9639f4f9b603e369a91a&type=album",
+        "name": "Андреевская Конфедеративная Республика",
+        "group": "",
+        "goverment_type": "Парламентская республика",
+        "goverment_form": "Конфедеративная",
+        "ideology": "Социал-демократия",
+        "political_type": "Демократический",
+        "desc": "<p>Андреевская Конфедеративная Республика была образована в результате подписания договора конфедерации между правительством Андреевской Народной Республики, главой движения \"Андреевская Народно-Демократическая Республика\" и главой движения \"Андреевское Королевство\". </p>",
+        "date": "2023-03-14",
+        "add": "",
+        "check": "full"
+    },
+    "valute": {
+        "id": "490817878",
+        "vid": "ank",
+        "name": "Ан Конфедерации",
+        "photo": "https://sun9-44.userapi.com/impg/yuafERrxybGlM9cSZ-qY03ccsGw20ekjRZq14g/mJetNIr-4d8.jpg?size=302x158&quality=95&sign=e9768d2aacc8ae2bfb8081005246b077&type=album",
+        "desc": "<p>официальная валюта АКР</p>",
+        "symbol": "",
+        "abbreviation": "ANK",
+        "change": 35.0,
+        "add": "",
+        "check": "query"
+    }
+}

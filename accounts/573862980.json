@@ -1,0 +1,37 @@
+{
+    "account": {
+        "moderation": false,
+        "banned": false,
+        "admin": false,
+        "id": "573862980",
+        "cid": "raneria",
+        "vid": "unknown"
+    },
+    "country": {
+        "id": "573862980",
+        "cid": "raneria",
+        "flag": "/static/images/defaults/profile_flag.png",
+        "name": "Республика Ранэрия",
+        "group": "",
+        "goverment_type": "Президентская республика",
+        "goverment_form": "Унитарная",
+        "ideology": "Консерватизм",
+        "political_type": "Авторитарный",
+        "desc": "<p>Республика Ранэрия, располагающаяся на северной части американского континента, занимая штаты Пенсильвания и Огайо. Большое концентрирование на железнодорожной промышленности. </p>",
+        "date": "2023-08-10",
+        "add": "",
+        "check": "full"
+    },
+    "valute": {
+        "id": "573862980",
+        "vid": "unknown",
+        "name": "Неизвестно",
+        "photo": "/static/images/country/profile.png",
+        "desc": "",
+        "change": 1.0,
+        "abbreviation": "UNK",
+        "symbol": "",
+        "add": "",
+        "check": "query"
+    }
+}

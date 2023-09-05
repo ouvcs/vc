@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/static/admin.css">
+    <link rel="icon" href="/static/logo.png" type="image/png">
+
+    <title>Admin Panel</title>
+</head>
+<body>
+    <div id="load"><div id="load-circle"></div><div id="load-message"></div></div>
+    <div id="wrapper">
+        <div id="navigator">
+            <b id="logo">Admin Panel</b>
+            <input type="text" placeholder="Country ID" maxlength="50" id="id-input" class="input" error="">
+            <input type="password" placeholder="Admin Password" id="password-input" class="input">
+            <input type="password" placeholder="Token" id="token-input" class="input">
+            <button id="reload-button" class="button">&#8635;</button>
+            <button id="upload-button" class="button">&#8652;</button> 
+        </div>
+        <div id="content">
+            <div id="country">
+                <h3>Country</h3>
+                <div id="check-coutry">
+                    <label for="check-country-select">Check</label>
+                    <select name="check-country-select" id="check-country-select">
+                        <option value="query" selected>Query</option>
+                        <option value="no">No</option>
+                        <option value="patial">Partial</option>
+                        <option value="full">Full</option>
+                    </select>
+                </div>
+            </div>
+            <div id="valute">
+                <h3>Valute</h3>
+                <div id="check-valute">
+                    <label for="check-valute-select">Check</label>
+                    <select name="check-valute-select" id="check-valute-select">
+                        <option value="query" selected>Query</option>
+                        <option value="no">No</option>
+                        <option value="patial">Partial</option>
+                        <option value="full">Full</option>
+                    </select>
+                </div>
+            </div>
+            <div id="account">
+                <h3>Account</h3>
+                <div id="moderation-account">
+                    <label for="moderation-account-select">Moderation</label>
+                    <select name="moderation-account-select" id="moderation-account-select">
+                        <option value="false" selected>False</option>
+                        <option value="true">True</option>
+                    </select>
+                </div>
+                <div id="banned-account">
+                    <label for="banned-account-select">Banned</label>
+                    <select name="banned-account-select" id="banned-account-select">
+                        <option value="false" selected>False</option>
+                        <option value="true">True</option>
+                    </select>
+                </div>
+                <div id="admin-account">
+                    <label for="admin-account-select">Admin</label>
+                    <select name="admin-account-select" id="admin-account-select">
+                        <option value="false" selected>False</option>
+                        <option value="true">True</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/admin.js"></script>
+</body>
+</html>

@@ -1,82 +1,27 @@
-from custom_types import *
-import functions as fn
-from functions import Settings
-import accounts
+from utils.custom_types import *
+from utils.settings import settings
+import utils.accounts as accounts
+import opened
+import closed
+import api_utils
+import ui
 
+app = FastAPI(debug=True, docs_url="/ds", redoc_url="")
 
-app = FastAPI()
-settings = Settings()
+app.mount("/static", StaticFiles(directory="html/static"), name="static")
 
-@app.get("/", response_class=PrettyJSONResponse)
+app.include_router(opened.router)
+app.include_router(closed.router)
+app.include_router(api_utils.router)
+app.include_router(ui.router)
+
+@app.get("/", response_class=PrettyJSONResponse, tags=["default"])
 async def index():
-    return {"response": "This page is not allowed to request."}
+    return {"response": "Эта страница не подходит для запросов."}
 
 @app.exception_handler(HTTPException)
 async def exception(request: Request, e: HTTPException):
-    return PrettyJSONResponse(status_code=e.status_code, content={"error": e.detail})
-
-
-@app.get("/api/countries/", response_class=PrettyJSONResponse)
-async def api_countries(search: str = ""):
-    response = fn.countries(search)
-    
-    if "error" in response:
-        raise HTTPException(status_code=int(response["error_code"]), detail=str(response["error"]))
-    else:
-        return {"response": response}
-
-@app.get("/api/country/", response_class=PrettyJSONResponse)
-async def api_country(id: str = ""):
-    response = fn.country(id)
-    
-    if "error" in response:
-        raise HTTPException(status_code=int(response["error_code"]), detail=str(response["error"]))
-    else:
-        return {"response": response}
-
-
-@app.get("/api/valutes/", response_class=PrettyJSONResponse)
-async def api_valutes(search: str = ""):
-    response = fn.valutes(search)
-    
-    if "error" in response:
-        raise HTTPException(status_code=int(response["error_code"]), detail=str(response["error"]))
-    else:
-        return {"response": response}
-
-@app.get("/api/valute/", response_class=PrettyJSONResponse)
-async def api_valute(id: str = ""):
-    response = fn.valute(id)
-    
-    if "error" in response:
-        raise HTTPException(status_code=int(response["error_code"]), detail=str(response["error"]))
-    else:
-        return {"response": response}
-
-
-@app.get("/api/geo/", response_class=PrettyJSONResponse)
-async def api_geo(id: str = "000000000"):
-    if id != "000000000":
-        response = fn.country_geo(id)
-
-        if "error" in response:
-            raise HTTPException(status_code=int(response["error_code"]), detail=str(response["error"]))
-        else:
-            return response
-    else:
-        response = fn.countries_geo()
-
-        if "error" in response:
-            raise HTTPException(status_code=int(response["error_code"]), detail=str(response["error"]))
-        else:
-            return response
-
-@app.get("/api/admin/{command}", response_class=PrettyJSONResponse)
-async def api_admin(command: str = "", key: str = "", value: str = "", id: str = "", admin_code: str = ""):
-    if admin_code == settings.api_admin:
-        return {"response": fn.admin(command, key, value, id)}
-    else:
-        raise HTTPException(status_code=403, detail="Invalid admin code.")
+    return PrettyJSONResponse(status_code=e.status_code, content={"error_code": e.status_code, "error": e.detail})
 
 if __name__ == "__main__":
     os.system("uvicorn main:app --reload --host 0.0.0.0 --port 5000")

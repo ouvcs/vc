@@ -1,0 +1,40 @@
+{
+    "account": {
+        "moderation": false,
+        "banned": false,
+        "admin": true,
+        "id": "000000000",
+        "cid": "unknown",
+        "vid": "unknown",
+        "name": "Неизвестно",
+        "screen_name": "unknown",
+        "photo": "/static/images/defaults/profile.png"
+    },
+    "country": {
+        "id": "000000000",
+        "cid": "unknown",
+        "flag": "/static/images/defaults/profile_flag.png",
+        "name": "Неизвестно",
+        "group": "https://vk.com/vgovernments",
+        "goverment_type": "Неизвестный",
+        "goverment_form": "Неизвестный",
+        "ideology": "Отсутствует",
+        "political_type": "Неизвестный",
+        "desc": "",
+        "date": "01.01.2021",
+        "add": "",
+        "check": "full"
+    },
+    "valute": {
+        "id": "000000000",
+        "vid": "unknown",
+        "name": "Неизвестно",
+        "photo": "/static/images/country/profile.png",
+        "desc": "",
+        "change": 1.0,
+        "abbreviation": "UNK",
+        "symbol": "",
+        "add": "",
+        "check": "full"
+    }
+}
