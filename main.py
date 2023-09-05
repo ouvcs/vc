@@ -1,9 +1,8 @@
-from utils.custom_types import *
-from utils.settings import settings
-import utils.accounts as accounts
 import opened
 import closed
 import api_utils
+from api_utils import *
+from api_utils import settings as settings
 import ui
 
 app = FastAPI(debug=True, docs_url="/ds", redoc_url="")

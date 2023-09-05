@@ -1,6 +1,4 @@
-from utils.custom_types import *
-from utils.settings import settings
-import utils.accounts as accounts
+from api_utils import *
 
 async def check_token(token: str = ""):
     if token != settings.api_key:

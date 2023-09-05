@@ -1,6 +1,6 @@
-from utils.custom_types import *
-from utils.settings import settings
-import utils.accounts as accounts
+from api_utils_folder.custom_types import *
+from api_utils_folder.settings import settings
+import api_utils_folder.accounts as accounts
 
 router = APIRouter(prefix="/utils", tags=["utils"])
 

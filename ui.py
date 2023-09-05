@@ -1,6 +1,4 @@
-from utils.custom_types import *
-from utils.settings import settings
-import utils.accounts as accounts
+from api_utils import *
 
 router = APIRouter(tags=["default"])
 
