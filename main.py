@@ -5,7 +5,7 @@ from api_utils import *
 from api_utils import settings as settings
 import ui
 
-app = FastAPI(debug=True, docs_url="/ds", redoc_url="",             
+app = FastAPI(debug=True, docs_url="/ds", redoc_url="",
     title="OUVC API",
     version="0.1",
     contact={
