@@ -31,6 +31,10 @@ app.include_router(ui.router)
 async def index():
     return {"response": "Эта страница не подходит для запросов."}
 
+@app.get("/openapi.json", response_class=PrettyJSONResponse, tags=["default"], include_in_schema=False)
+async def openapi_json():
+    return get_openapi()
+
 @app.exception_handler(HTTPException)
 async def exception(request: Request, e: HTTPException):
     return PrettyJSONResponse(status_code=e.status_code, content={"error_code": e.status_code, "error": e.detail})
