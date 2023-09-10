@@ -1,6 +1,6 @@
 {
     "account": {
-        "moderation": false,
+        "moderation": true,
         "banned": false,
         "admin": true,
         "id": "000000000",

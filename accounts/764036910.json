@@ -10,7 +10,7 @@
     "country": {
         "id": "764036910",
         "cid": "russanija",
-        "flag": "20230820_220817.png",
+        "flag": "/static/images/defaults/profile_flag.png",
         "name": "Руссанская Республика",
         "group": "https://vk.com/russania",
         "goverment_type": "Президентская республика",
