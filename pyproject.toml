@@ -1,8 +1,10 @@
 [tool.poetry]
-name = "OUVC_API"
-version = "0.0.1b"
-description = "API Site for OUVC sites."
+name = "ouvc-api"
+version = "0.1"
+description = "The API Site for OUVC sites."
 authors = ["Matvey Buldakov <m.buldakov10min@gmail.com>"]
+license = "MIT-License"
+readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.10"
